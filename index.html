@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ | Bee Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home_style.css">
+    <link rel="stylesheet" href="./assets/css/home_resp.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="./assets/js/base.js"></script>
+    <script src="./assets/js/home.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Phần Header -->
+        <header class="header">
+            <!-- Navbar top -->
+            <nav class="navbar">
+                <div class="grid wide">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">
+                                <i class="navbar__link-icon fa-solid fa-phone"></i>
+                                Mua hàng và CSKH
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">Bảng chọn size</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">Danh sách cửa hàng trên toàn quốc</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">
+                                <i class="navbar__link-icon fa-solid fa-location-dot"></i>
+                                Tìm cửa hàng gần nhất
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__link">
+                                <i class="navbar__link-icon fa-solid fa-user"></i>
+                                Trương Văn Lâm
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Header-with-search -->
+            <div class="header-bottom">
+                <div class="grid wide">
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="./index.html" class="header__logo-link">
+                                <svg class="header__logo-img" width="257" height="36" viewBox="0 0 257 36" fill="#eb5e28" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.15825 35C1.80625 35 1.51825 34.888 1.29425 34.664C1.07025 34.44 0.95825 34.152 0.95825 33.8V2.6C0.95825 2.248 1.07025 1.96 1.29425 1.736C1.51825 1.512 1.80625 1.4 2.15825 1.4H16.4143C19.0703 1.4 21.2463 1.784 22.9423 2.552C24.6383 3.32 25.8863 4.408 26.6863 5.816C27.5183 7.224 27.9343 8.872 27.9343 10.76C27.9343 11.944 27.7103 12.984 27.2623 13.88C26.8463 14.776 26.3183 15.512 25.6783 16.088C25.0703 16.664 24.4783 17.096 23.9023 17.384C25.1503 17.96 26.2383 18.92 27.1663 20.264C28.1263 21.576 28.6063 23.144 28.6063 24.968C28.6063 26.984 28.1583 28.744 27.2623 30.248C26.3663 31.752 25.0383 32.92 23.2783 33.752C21.5183 34.584 19.3743 35 16.8463 35H2.15825ZM8.59025 29.384H15.9343C17.5023 29.384 18.6863 28.952 19.4863 28.088C20.2863 27.192 20.6863 26.136 20.6863 24.92C20.6863 23.672 20.2703 22.632 19.4383 21.8C18.6383 20.936 17.4703 20.504 15.9343 20.504H8.59025V29.384ZM8.59025 14.984H15.5023C17.0063 14.984 18.1263 14.616 18.8623 13.88C19.6303 13.112 20.0143 12.136 20.0143 10.952C20.0143 9.768 19.6303 8.824 18.8623 8.12C18.1263 7.384 17.0063 7.016 15.5023 7.016H8.59025V14.984ZM35.5333 35C35.1813 35 34.8933 34.888 34.6693 34.664C34.4453 34.44 34.3333 34.152 34.3333 33.8V2.6C34.3333 2.248 34.4453 1.96 34.6693 1.736C34.8933 1.512 35.1813 1.4 35.5333 1.4H57.2773C57.6293 1.4 57.9173 1.512 58.1413 1.736C58.3653 1.96 58.4773 2.248 58.4773 2.6V6.44C58.4773 6.76 58.3653 7.032 58.1413 7.256C57.9173 7.48 57.6293 7.592 57.2773 7.592H41.7253V15.128H56.2213C56.5733 15.128 56.8613 15.24 57.0853 15.464C57.3093 15.688 57.4213 15.976 57.4213 16.328V19.88C57.4213 20.2 57.3093 20.472 57.0853 20.696C56.8613 20.92 56.5733 21.032 56.2213 21.032H41.7253V28.808H57.6613C58.0133 28.808 58.3013 28.92 58.5253 29.144C58.7493 29.368 58.8613 29.656 58.8613 30.008V33.8C58.8613 34.152 58.7493 34.44 58.5253 34.664C58.3013 34.888 58.0133 35 57.6613 35H35.5333ZM65.7676 35C65.4156 35 65.1276 34.888 64.9036 34.664C64.6796 34.44 64.5676 34.152 64.5676 33.8V2.6C64.5676 2.248 64.6796 1.96 64.9036 1.736C65.1276 1.512 65.4156 1.4 65.7676 1.4H87.5116C87.8636 1.4 88.1516 1.512 88.3756 1.736C88.5996 1.96 88.7116 2.248 88.7116 2.6V6.44C88.7116 6.76 88.5996 7.032 88.3756 7.256C88.1516 7.48 87.8636 7.592 87.5116 7.592H71.9596V15.128H86.4556C86.8076 15.128 87.0956 15.24 87.3196 15.464C87.5436 15.688 87.6556 15.976 87.6556 16.328V19.88C87.6556 20.2 87.5436 20.472 87.3196 20.696C87.0956 20.92 86.8076 21.032 86.4556 21.032H71.9596V28.808H87.8956C88.2476 28.808 88.5356 28.92 88.7596 29.144C88.9836 29.368 89.0956 29.656 89.0956 30.008V33.8C89.0956 34.152 88.9836 34.44 88.7596 34.664C88.5356 34.888 88.2476 35 87.8956 35H65.7676ZM117.492 35.48C114.42 35.48 111.844 35.032 109.764 34.136C107.716 33.24 106.164 32.072 105.108 30.632C104.052 29.192 103.492 27.656 103.428 26.024C103.428 25.768 103.524 25.544 103.716 25.352C103.908 25.128 104.148 25.016 104.436 25.016H109.572C109.988 25.016 110.308 25.112 110.532 25.304C110.756 25.464 110.964 25.672 111.156 25.928C111.38 26.472 111.732 27 112.212 27.512C112.724 28.024 113.412 28.456 114.276 28.808C115.14 29.128 116.212 29.288 117.492 29.288C119.572 29.288 121.124 28.952 122.148 28.28C123.204 27.608 123.732 26.696 123.732 25.544C123.732 24.712 123.444 24.04 122.868 23.528C122.324 23.016 121.444 22.552 120.228 22.136C119.044 21.72 117.46 21.272 115.476 20.792C113.076 20.28 111.028 19.624 109.332 18.824C107.668 17.992 106.404 16.936 105.54 15.656C104.708 14.344 104.292 12.728 104.292 10.808C104.292 8.888 104.82 7.192 105.876 5.72C106.932 4.216 108.42 3.048 110.34 2.216C112.26 1.352 114.548 0.919998 117.204 0.919998C119.348 0.919998 121.236 1.208 122.868 1.784C124.532 2.36 125.908 3.112 126.996 4.04C128.116 4.968 128.964 5.96 129.54 7.016C130.116 8.072 130.42 9.096 130.452 10.088C130.452 10.344 130.356 10.584 130.164 10.808C129.972 11 129.732 11.096 129.444 11.096H124.068C123.748 11.096 123.46 11.032 123.204 10.904C122.948 10.776 122.74 10.552 122.58 10.232C122.388 9.4 121.812 8.68 120.852 8.072C119.924 7.432 118.708 7.112 117.204 7.112C115.636 7.112 114.388 7.4 113.46 7.976C112.564 8.552 112.116 9.432 112.116 10.616C112.116 11.384 112.34 12.04 112.788 12.584C113.268 13.096 114.052 13.56 115.14 13.976C116.26 14.36 117.732 14.792 119.556 15.272C122.372 15.848 124.66 16.536 126.42 17.336C128.18 18.136 129.476 19.176 130.308 20.456C131.14 21.704 131.556 23.288 131.556 25.208C131.556 27.352 130.948 29.192 129.732 30.728C128.548 32.264 126.9 33.448 124.788 34.28C122.708 35.08 120.276 35.48 117.492 35.48ZM144.972 35C144.62 35 144.332 34.888 144.108 34.664C143.884 34.44 143.772 34.152 143.772 33.8V8.072H135.036C134.716 8.072 134.444 7.96 134.22 7.736C133.996 7.512 133.884 7.24 133.884 6.92V2.6C133.884 2.248 133.996 1.96 134.22 1.736C134.444 1.512 134.716 1.4 135.036 1.4H160.188C160.54 1.4 160.828 1.512 161.052 1.736C161.276 1.96 161.388 2.248 161.388 2.6V6.92C161.388 7.24 161.276 7.512 161.052 7.736C160.828 7.96 160.54 8.072 160.188 8.072H151.5V33.8C151.5 34.152 151.388 34.44 151.164 34.664C150.94 34.888 150.652 35 150.3 35H144.972ZM178.787 35.48C175.875 35.48 173.363 35 171.251 34.04C169.139 33.08 167.491 31.64 166.307 29.72C165.123 27.768 164.483 25.32 164.387 22.376C164.355 21 164.339 19.64 164.339 18.296C164.339 16.92 164.355 15.528 164.387 14.12C164.483 11.24 165.123 8.824 166.307 6.872C167.523 4.888 169.187 3.4 171.299 2.408C173.443 1.416 175.939 0.919998 178.787 0.919998C181.603 0.919998 184.067 1.416 186.179 2.408C188.323 3.4 190.003 4.888 191.219 6.872C192.435 8.824 193.075 11.24 193.139 14.12C193.203 15.528 193.235 16.92 193.235 18.296C193.235 19.64 193.203 21 193.139 22.376C193.043 25.32 192.403 27.768 191.219 29.72C190.035 31.64 188.387 33.08 186.275 34.04C184.163 35 181.667 35.48 178.787 35.48ZM178.787 29.288C180.643 29.288 182.163 28.728 183.347 27.608C184.563 26.456 185.203 24.632 185.267 22.136C185.331 20.728 185.363 19.416 185.363 18.2C185.363 16.952 185.331 15.64 185.267 14.264C185.235 12.6 184.931 11.24 184.355 10.184C183.779 9.128 183.011 8.36 182.051 7.88C181.123 7.368 180.035 7.112 178.787 7.112C177.539 7.112 176.435 7.368 175.475 7.88C174.515 8.36 173.747 9.128 173.171 10.184C172.627 11.24 172.323 12.6 172.259 14.264C172.227 15.64 172.211 16.952 172.211 18.2C172.211 19.416 172.227 20.728 172.259 22.136C172.355 24.632 172.995 26.456 174.179 27.608C175.363 28.728 176.899 29.288 178.787 29.288ZM200.393 35C200.041 35 199.753 34.888 199.529 34.664C199.305 34.44 199.193 34.152 199.193 33.8V2.6C199.193 2.248 199.305 1.96 199.529 1.736C199.753 1.512 200.041 1.4 200.393 1.4H213.113C217.113 1.4 220.265 2.328 222.569 4.184C224.873 6.008 226.025 8.648 226.025 12.104C226.025 14.44 225.465 16.392 224.345 17.96C223.225 19.528 221.721 20.696 219.833 21.464L226.601 33.464C226.697 33.656 226.745 33.832 226.745 33.992C226.745 34.248 226.649 34.488 226.457 34.712C226.265 34.904 226.025 35 225.737 35H220.409C219.833 35 219.401 34.856 219.113 34.568C218.825 34.248 218.617 33.96 218.489 33.704L212.633 22.712H206.825V33.8C206.825 34.152 206.713 34.44 206.489 34.664C206.265 34.888 205.977 35 205.625 35H200.393ZM206.825 16.616H212.969C214.729 16.616 216.025 16.216 216.857 15.416C217.721 14.616 218.153 13.496 218.153 12.056C218.153 10.616 217.737 9.48 216.905 8.648C216.073 7.816 214.761 7.4 212.969 7.4H206.825V16.616ZM233.111 35C232.759 35 232.471 34.888 232.247 34.664C232.023 34.44 231.911 34.152 231.911 33.8V2.6C231.911 2.248 232.023 1.96 232.247 1.736C232.471 1.512 232.759 1.4 233.111 1.4H254.855C255.207 1.4 255.495 1.512 255.719 1.736C255.943 1.96 256.055 2.248 256.055 2.6V6.44C256.055 6.76 255.943 7.032 255.719 7.256C255.495 7.48 255.207 7.592 254.855 7.592H239.303V15.128H253.799C254.151 15.128 254.439 15.24 254.663 15.464C254.887 15.688 254.999 15.976 254.999 16.328V19.88C254.999 20.2 254.887 20.472 254.663 20.696C254.439 20.92 254.151 21.032 253.799 21.032H239.303V28.808H255.239C255.591 28.808 255.879 28.92 256.103 29.144C256.327 29.368 256.439 29.656 256.439 30.008V33.8C256.439 34.152 256.327 34.44 256.103 34.664C255.879 34.888 255.591 35 255.239 35H233.111Z" fill="#F15E2C"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="header__menu">
+                            <i class="header__menu-icon fa-solid fa-bars"></i>
+                            <i class="header__menu-sub-icon fa-solid fa-caret-down"></i>
+                            <div class="header__menu-wrap">
+                                <div class="grid wide">
+                                    <div class="header__menu-body">
+                                        <h1 class="header__menu-title">DANH SÁCH SẢN PHẨM</h1>
+                                        <div class="row">
+                                            <div class="col l-3 c-6">
+                                                <div class="header__menu-item">
+                                                    <a href="" class="header__menu-heading">NỔI BẬT</a>
+                                                    <ul class="header__menu-list">
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Sản phẩm mới</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Bộ sưu tập</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Bán chạy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Best Seller</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 c-6">
+                                                <div class="header__menu-item">
+                                                    <a href="" class="header__menu-heading">BÉ NAM</a>
+                                                    <ul class="header__menu-list">
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Áo thun</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Áo khoác</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Quần short</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Quần thể thao</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Đồng phục</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Giày thể thao</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Đồ ngủ</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 c-6">
+                                                <div class="header__menu-item header__menu-item--border">
+                                                    <a href="" class="header__menu-heading">BÉ NỮ</a>
+                                                    <ul class="header__menu-list">
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Áo thun</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Áo khoác</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Đầm / Váy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Quần thể thao</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Đồng phục</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Giày thể thao</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Đồ ngủ</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 c-6">
+                                                <div class="header__menu-item">
+                                                    <a href="" class="header__menu-heading">PHỤ KIỆN VÀ ĐỒ CHƠI</a>
+                                                    <ul class="header__menu-list">
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Đồ chơi cho bé nam</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Đồ chơi cho bé nữ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Mũ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Tất, vớ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Balo</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="header__menu-link">Nơ, cài, kẹp</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h2 class="heading__menu-slogan">Luôn mang đến sản phẩm tốt nhất cho con của bạn!</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__search">
+                            <input type="text" name="" id="seaechbox" class="header__search-input" placeholder="Tìm kiếm nhanh">
+                            <button class="header__search-btn" onclick="searchInput()">
+                                <i class="header__seacrh-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+
+                        <div class="header__cart">
+                            <!-- fa-solid fa-cart-shopping -->
+                            <i class="header__cart-icon ti-shopping-cart"></i>
+                            <div class="header__cart-list">
+                                <h3 class="header__cart-title">Giỏ hàng (0)</h3>
+                                <span class="header__cart-content">Hổng có gì trong giỏ hết!!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Banner -->
+        <div class="home-banner">
+            <div class="grid wide full-width">
+                <div class="home-banner__wrap">
+                    <img src="./assets/img/home_banner/banner_1.JPG" alt="" onclick="changeImage()" id="banner-img" class="home-banner__img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần chứa nội dung -->
+        <div class="container">
+            <div class="grid wide">
+                <div class="home-product__wrap">
+                    <div class="row">
+                        <div class="col l-2 m-3 c-0">
+                            <div class="category">
+                                <h2 class="category__heading">
+                                    <i class="category__heading-icon ti-menu-alt"></i>
+                                    Danh mục
+                                </h2>
+                                <a href="" class="category__title">Bé Nam</a>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Áo thun</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Áo khoác</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Quần short</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Quần thể thao</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Đồng phục</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Giày thể thao</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Đồ ngủ</a>
+                                    </li>
+                                </ul>
+    
+                                <a href="" class="category__title">Bé Nữ</a>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Áo thun</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Áo khoác</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Đầm / Váy</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Quần thể thao</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Đồng phục</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Giày thể thao</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Đồ ngủ</a>
+                                    </li>
+                                </ul>
+
+                                <a href="" class="category__title">Phụ kiện & Đồ chơi</a>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Đồ chơi cho bé nam</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Đồ chơi cho bé nữ</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Mũ</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Tất, vớ</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Balo</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a href="" class="category__link">Nơ, cài, kẹp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col l-10 m-9 c-12 pd-12">
+                            <!-- Sản phẩm Flash Sale -->
+                            <div class="home-product">
+                                <a href="" class="home-product__heading">
+                                    <i class="home-product__flash-icon fa-solid fa-bolt"></i>
+                                    Flash Sale
+                                </a>
+                                <div class="row gutters-5">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(./assets/img/home_product/sale/sp_1.jpg);"></div>
+                                            <a href="" class="home-product__name">Áo bé trai tay ngắn CF B0521006 (6 - 24M, Vàng)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">79.000đ</span>
+                                                    <span class="home-product__price-old">129.000đ</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2022/04/56714-86219-large_mobile/bo-be-gai-ngan-animo-6m-6y-trang.jpg);"></div>
+                                            <a href="" class="home-product__name">Bộ bé gái ngắn Animo (6M - 6Y, Trắng)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">119.000đ</span>
+                                                    <span class="home-product__price-old">189.000đ</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2021/12/53021-78313-large_mobile/dam-vai-be-gai-cf-g0621004-1-2y-xanh-duong.jpg);"></div>
+                                            <a href="" class="home-product__name">Đầm vải bé gái (1 - 6Y, Xanh dương)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">119.000đ</span>
+                                                    <span class="home-product__price-old">189.000đ</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(./assets/img/home_product/sale/main_product.jpg);"></div>
+                                            <a href="./subpage/product.html" class="home-product__name">Bộ bé trai ngắn BST thú cưng Animo B1121023 (6 - 9M, Trắng)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">109.000đ</span>
+                                                    <span class="home-product__price-old">179.000đ</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2022/05/56717-87555-large_mobile/non-be-trai-animo-a2110-jk013-1-3y-xanh.jpg);"></div>
+                                            <a href="" class="home-product__name">Nón bé trai Animo (1 - 3Y, Xanh)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">54.000đ</span>
+                                                    <span class="home-product__price-old">99.000đ</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sản phẩm cho bé trai -->
+                            <div class="home-product">
+                                <div class="home-product__desc">
+                                    <a href="" class="home-product__heading">
+                                        Bé Nam
+                                        <i class="home-product__heading-icon fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="home-product__filter">
+                                        <span>Bán chạy:</span>
+                                        <a href="" class="home-product__filter--active">Tuần</a>
+                                        <a href="">Tháng</a>
+                                        <a href="">Năm</a>
+                                        <a href="">Xem tất cả</a>
+                                    </div>
+                                </div>
+                                <div class="row gutters-5">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2021/12/54355-78438-large_mobile/bo-be-trai-dai-cf-b0721004-9-12m-trang.jpg);"></div>
+                                            <a href="" class="home-product__name">Bộ bé trai dài (9 - 12M, Trắng)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">179.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 201</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(./assets/img/home_product/sale/main_product.jpg);"></div>
+                                            <a href="./subpage/product.html" class="home-product__name">Bộ bé trai ngắn BST thú cưng Animo B1121023 (6 - 9M, Trắng)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">109.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 211</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2020/06/46201-62787-large_mobile/ao-thun-be-trai-tay-ngan-cf-b0520010-9m-xanh.jpg);"></div>
+                                            <a href="" class="home-product__name">Áo thun bé trai tay ngắn (1 - 9M, Xanh)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">129.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 64</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2020/01/43780-56561-large_mobile/ao-thun-be-trai-tay-ngan-cf-g119028-xam.jpg);"></div>
+                                            <a href="" class="home-product__name">Áo thun bé trai tay ngắn CF G119027 (Xanh)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">179.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 146</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2022/01/50052-79267-large_mobile/bo-ao-quan-thun-mac-nha-be-trai-ngan-cf-b1120001-3-4y-trang.jpg);"></div>
+                                            <a href="" class="home-product__name">Bộ áo quần thun mặc nhà bé trai CF B1120001 (3 - 4Y, Trắng)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">189.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 133</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="home-product__next">
+                                    <i class="home-product__next-icon fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+
+                            <!-- Sản phẩm cho bé gái -->
+                            <div class="home-product">
+                                <div class="home-product__desc">
+                                    <a href="" class="home-product__heading">
+                                        Bé Nữ
+                                        <i class="home-product__heading-icon fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="home-product__filter">
+                                        <span>Bán chạy:</span>
+                                        <a href="" class="home-product__filter--active">Tuần</a>
+                                        <a href="">Tháng</a>
+                                        <a href="">Năm</a>
+                                        <a href="">Xem tất cả</a>
+                                    </div>
+                                </div>
+                                <div class="row gutters-5">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2021/12/53021-78313-large_mobile/dam-vai-be-gai-cf-g0621004-1-2y-xanh-duong.jpg);"></div>
+                                            <a href="" class="home-product__name">Đầm vải bé gái CF G0621004 (1 - 2Y, Xanh dương)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">199.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 113</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2020/02/44505-57317-large_mobile/dam-thun-be-gai-cf-g0220005-9m-xanh.jpg);"></div>
+                                            <a href="" class="home-product__name">Đầm thun bé gái CF G0220005 (9M, Xanh)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">159.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 201</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2020/10/48047-66026-large_mobile/ao-polo-be-gai-cf-g0720012-6y-hong.jpg);"></div>
+                                            <a href="" class="home-product__name">Áo polo bé gái CF G0720012 (6Y, Hồng)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">132.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 121</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2020/03/44891-58350-large_mobile/ao-thun-be-gai-tay-dai-cf-g0220020-9m-cam-lot.jpg);"></div>
+                                            <a href="" class="home-product__name">Áo thun bé gái tay dài CF G0220020 (9m, Cam lợt)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">149.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 76</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2020/01/44293-56537-large_mobile/ao-thun-be-gai-tay-ngan-cf-g119024-4y-trang.jpg);"></div>
+                                            <a href="" class="home-product__name">Áo thun bé gái tay ngắn CF G119024 (4Y, Trắng)</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">169.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 110</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="home-product__next">
+                                    <i class="home-product__next-icon fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+
+                            <!-- Phụ kiện -->
+                            <div class="home-product">
+                                <div class="home-product__desc">
+                                    <a href="" class="home-product__heading">
+                                        Phụ kiện & Đồ chơi
+                                        <i class="home-product__heading-icon fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="home-product__filter">
+                                        <span>Bán chạy:</span>
+                                        <a href="" class="home-product__filter--active">Tuần</a>
+                                        <a href="">Tháng</a>
+                                        <a href="">Năm</a>
+                                        <a href="">Xem tất cả</a>
+                                    </div>
+                                </div>
+                                <div class="row gutters-5">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2021/11/52856-77578-large_mobile/dep-suc-con-ca-cf2105-jkke200019-93-24-cam.jpg);"></div>
+                                            <a href="" class="home-product__name">Dép sục con cá CF2105 JKKE200019 Cam</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">149.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 54</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2021/06/47718-73788-large_mobile/ao-mua-be-trai-spiderman-vf86393-s-size-xl.jpg);"></div>
+                                            <a href="" class="home-product__name">Áo mưa bé trai Spiderman VF86393 XL</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">129.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 21</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2021/12/54761-78729-large_mobile/set-bang-do-cho-be-3-mon-animo-a2109-mn042-nhieu-mau.jpg);"></div>
+                                            <a href="" class="home-product__name">Set băng đô cho bé 3 món Animo A2109 Nhiều màu</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">129.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 32</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2020/05/45471-60461-large_mobile/do-choi-dat-nan-dau-bep-mini-play-doh-e7474.jpg);"></div>
+                                            <a href="" class="home-product__name">Đồ chơi đất nặn đầu bếp mini Play Doh E7474</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">14.500đ</span>
+                                                    <span class="home-product__quantity">Đã bán 60</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="home-product__item">
+                                            <div class="home-product__img" style="background-image: url(https://cdn.concung.com/2020/05/45700-61671-large_mobile/40-hello-kitty-bst-1000-de-can-uoc-mo-tuoi-dep.jpg);"></div>
+                                            <a href="" class="home-product__name">Hello Kitty BST đecan Ước mơ tươi đẹp</a>
+                                            <div class="home-product__body">
+                                                <div class="home-product__price">
+                                                    <span class="home-product__price-present">40.000đ</span>
+                                                    <span class="home-product__quantity">Đã bán 14</span>
+                                                </div>
+                                                <i class="home-product__add-icon fa-solid fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="home-product__next">
+                                    <i class="home-product__next-icon fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-blog pd-12">
+                    <h2 class="home-blog__heading">Bài Viết Dành Cho Mẹ Và Bé</h2>
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="home-blog__item">
+                                <img src="./assets/img/blog/post_1.jpg" alt="" class="home-blog__img">
+                                <div class="home-blog__body">
+                                    <a href="" class="home-blog__body-name">Hướng dẫn ba mẹ làm quen với trẻ trong tuần đầu tiên sau khi chào đời</a>
+                                    <p class="home-blog__body-desc">
+                                        Tuần đầu tiên trong cuộc đời bé có thể là thời gian đặc biệt và nhiều bỡ ngỡ đối với người mẹ. Mẹ có thể sẽ cảm thấy ngạc nhiên khi cuộc sống của mình thay đổi rất nhiều chỉ sau một đêm. Mặc dù bé vừa chào đời, nhưng có rất nhiều điều có thể xảy ra trong quá trình tăng trưởng và phát triển của chúng trong tuần đầu tiên.
+                                    </p>
+                                    <a href="" class="home-blog__body-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="home-blog__item">
+                                <img src="./assets/img/blog/post_2.jpg" alt="" class="home-blog__img">
+                                <div class="home-blog__body">
+                                    <a href="" class="home-blog__body-name">Nâng cao chất lượng chăm sóc sau sinh cho mẹ và bé theo kêu gọi của WHO</a>
+                                    <p class="home-blog__body-desc">
+                                        Tổ chức Y tế Thế giới (WHO) vừa đưa ra Hướng dẫn toàn cầu đầu tiên về hỗ trợ phụ nữ và trẻ sơ sinh trong giai đoạn sau khi sinh
+                                        Theo đó, 6 tuần đầu tiên sau sinh là thời điểm quan trọng để đảm bảo sự sống còn của trẻ sơ sinh và bà mẹ, đồng thời hỗ trợ sự phát triển khỏe mạnh của em bé cũng như sự phục hồi về sức khỏe tinh thần và thể chất của người mẹ.
+                                    </p>
+                                    <a href="" class="home-blog__body-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="home-blog__item">
+                                <img src="./assets/img/blog/post_3.jpg" alt="" class="home-blog__img">
+                                <div class="home-blog__body">
+                                    <a href="" class="home-blog__body-name">Độ tuổi nào là thời điểm tốt nhất để sinh con khỏe mạnh, phát triển thông minh?</a>
+                                    <p class="home-blog__body-desc">
+                                        Sinh con ở độ tuổi thích hợp sẽ mang đến sự phát triển tốt nhất cho trẻ, cũng như đảm bảo cơ thể mẹ sẽ phục hồi được sau những lần sinh đẻ
+                                        Rất nhiều cặp vợ chồng sau kết hôn thường tận hưởng cuộc sống và không vội có em bé. Tuy nhiên, hãy tìm hiểu sinh con ở độ tuổi nào là tốt nhất để cùng cân đối, tránh những ảnh hưởng xấu xảy ra.
+                                    </p>
+                                    <a href="" class="home-blog__body-more">Đọc thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần Footer trang -->
+        <footer class="footer pd-12">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-item">
+                            <h2 class="footer-item__heading">Về Bee Store</h2>
+                            <ul class="footer-item__list">
+                                <li>
+                                    <a href="" class="footer-item__link">Giới thiệu Bee Store</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-item__link">Danh sách cửa hàng</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-item__link">Điều khoản sử dụng</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-item__link">Cẩm nang cho mẹ</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-item__link">Bảo mật thông tin cá nhân</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-item__link">Bản tin tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-item">
+                            <h2 class="footer-item__heading">Hỗ Trợ Khách Hàng</h2>
+                            <ul class="footer-item__list">
+                                <li>
+                                    <a href="" class="footer-item__link">Tra cứu hóa đơn điện tử</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-item__link">Kiểm tra đơn hàng</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-item__link">Hướng dẫn đặt hàng</a>
+                                </li>
+                                <li>
+                                    <a href="" class="footer-item__link">Phương thức thanh toán</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-item">
+                            <h2 class="footer-item__heading">Thông tin cá nhân</h2>
+                            <ul class="footer-item__list">
+                                <li>
+                                    <a href="https://www.facebook.com/vanlam.truong.7503" class="footer-item__link">
+                                        <i class="footer-item__link-icon fa-brands fa-facebook"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/lam-truong-b867b4201/" class="footer-item__link">
+                                        <i class="footer-item__link-icon fa-brands fa-linkedin"></i>
+                                        Linkedin
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:lamtruong3242@gmail.com" class="footer-item__link">
+                                        <i class="footer-item__link-icon fa-solid fa-at"></i>
+                                        Gmail
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer-item">
+                            <h2 class="footer-item__heading">Gửi Phản Hồi</h2>
+                            <form action="" class="footer-form">
+                                <input type="text" name="" id="contentFB" class="footer-form__input" placeholder="Hãy đánh giá gì đó">
+                                <input type="button" value="GỬI" class="footer-form__btn" onclick="sendFeedback()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="footer-copyright">
+                    <i class="fa-solid fa-copyright"></i>
+                    2022 - Made by Trương Văn Lâm
+                </h2>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

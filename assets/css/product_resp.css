@@ -1,0 +1,118 @@
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    :root {
+        --header-with-search-height: 90px;
+    }
+    .navbar {
+        display: none;
+    }
+    .header {
+        height: var(--header-with-search-height);
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__logo {
+        width: unset;
+        padding-left: 0;
+        padding-right: 12px;
+    }
+    .header__logo-img {
+        width: 180px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__cart {
+        width: 70px;
+        padding: 0 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .header__cart-list {
+        top: 100%;
+        width: 460px;
+    }
+    .header__cart-list::after {
+        right: 12px;
+    }
+    .product-container {
+        margin-top: var(--header-with-search-height);
+    }
+    .product-item {
+        margin-top: 18px;
+    }
+    .footer-item {
+        margin-bottom: 22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .pd-12 {
+        padding: 0 12px !important;
+    }
+    .row.gutters-5 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .header {
+        --header-with-search-height: 60px;
+        height: var(--header-with-search-height);
+    }
+    .header__logo {
+        width: unset;
+        padding-left: 8px;
+    }
+    .header__menu-body {
+        padding: 0 18px;
+    }
+    .header__menu-heading {
+        font-size: 1.8rem;
+    }
+    .header__menu-title {
+        margin-bottom: 8px;
+    }
+    .header__menu-icon,
+    .header__menu-sub-icon {
+        font-size: 1.8rem;
+    }
+    .header__logo-img {
+        width: 150px;
+    }
+    .header__search-input {
+        display: none;
+    }
+    .header__cart {
+        width: 50px;
+        padding-right: 10px;
+    }
+    .header__cart-list::after {
+        right: 10px;
+    }
+    .product-container {
+        margin-top: 60px;
+    }
+    .breadcrumb__item {
+        font-size: 1.2rem;
+    }
+    .product-info__option-buy {
+        margin-bottom: 6px;
+    }
+    .product-info__btn-container {
+        flex-direction: column;
+    }
+    .btn {
+        width: 90%;
+    }
+    .product-desc__content {
+        padding: unset;
+        margin-bottom: 22px;
+    }
+    .footer-item {
+        text-align: center;
+        margin-top: 22px;
+    }
+}

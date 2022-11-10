@@ -1,0 +1,132 @@
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    :root {
+        --header-with-search-height: 90px;
+    }
+    .navbar {
+        display: none;
+    }
+    .full-width {
+        width: 100% !important;
+    }
+    .header {
+        height: var(--header-with-search-height);
+    }
+    .home-banner {
+        margin-top: var(--header-with-search-height);
+    }
+    .home-product__item {
+        margin-bottom: 12px;
+    }
+    .home-product__next {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__logo {
+        width: unset;
+        padding-left: 0;
+        padding-right: 12px;
+    }
+    .header__logo-img {
+        width: 180px;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__cart {
+        width: 70px;
+        padding: 0 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .header__cart-list {
+        top: 100%;
+        width: 460px;
+    }
+    .header__cart-list::after {
+        right: 12px;
+    }
+    .home-banner__img {
+        width: 100%;
+        object-fit: contain;
+        -o-object-fit: contain;
+    }
+    .home-product__wrap {
+        padding: 12px;
+    }
+    .footer-item {
+        margin-bottom: 22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .pd-12 {
+        padding: 0 12px !important;
+    }
+    .row.gutters-5 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .header {
+        --header-with-search-height: 60px;
+        height: var(--header-with-search-height);
+    }
+    .header__logo {
+        width: unset;
+        padding-left: 8px;
+    }
+    .header__menu-body {
+        padding: 0 18px;
+    }
+    .header__menu-heading {
+        font-size: 1.8rem;
+    }
+    .header__menu-title {
+        margin-bottom: 8px;
+    }
+    .header__menu-icon,
+    .header__menu-sub-icon {
+        font-size: 1.8rem;
+    }
+    .header__logo-img {
+        width: 150px;
+    }
+    .header__search-input {
+        display: none;
+    }
+    .header__cart {
+        width: 50px;
+        padding-right: 10px;
+    }
+    .header__cart-list::after {
+        right: 10px;
+    }
+    .home-banner {
+        margin-top: 60px;
+        width: 100%;
+    }
+    .home-banner__img {
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+    }
+    .home-product__wrap {
+        padding-top: unset;
+        margin-top: -210px;
+    }
+    .home-product__item {
+        min-height: unset;
+    }
+    .home-product__filter {
+        display: none;
+    }
+    .footer-item {
+        text-align: center;
+        margin-top: 22px;
+    }
+}
